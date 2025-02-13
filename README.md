@@ -71,7 +71,7 @@ Go to `http://127.0.0.1:8000/admin/` and log in with the superuser credentials.
 2. Use the following endpoints:
    - **Signup:** `POST http://127.0.0.1:8000/api/signup/`
    - **Login:** `POST http://127.0.0.1:8000/api/signin/`
-   - **Forgot Password:** `POST http://127.0.0.1:8000/api/forgot-password/`
+   - **Forgot Password:** `http://127.0.0.1:8000/api/profile/forgot-password/`
    - **Update Profile:** `PUT http://127.0.0.1:8000/api/update-profile/`
    - **Google Login:** `POST http://127.0.0.1:8000/api/google-login/`
 3. Use **JSON** format for requests.
