@@ -64,7 +64,7 @@ MIDDLEWARE = [
     "allauth.account.middleware.AccountMiddleware",
 ]
 
-ROOT_URLCONF = "aicommunity.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "aicommunity.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
