@@ -69,8 +69,8 @@ Go to `http://127.0.0.1:8000/admin/` and log in with the superuser credentials.
 ### **8️⃣ Test API Endpoints**
 1. Open [Postman](https://www.postman.com/).
 2. Use the following endpoints:
-   - **Signup:** `POST http://127.0.0.1:8000/api/signup/`
-   - **Login:** `POST http://127.0.0.1:8000/api/signin/`
+   - **Signup:** `POST http://127.0.0.1:8000/api/profile/signup/`
+   - **Login:** `POST http://127.0.0.1:8000/api/profile/signin/`
    - **Forgot Password:** `http://127.0.0.1:8000/api/profile/forgot-password/`
    - **Update Profile:** `PUT http://127.0.0.1:8000/api/update-profile/`
    - **Google Login:** `POST http://127.0.0.1:8000/api/google-login/`
