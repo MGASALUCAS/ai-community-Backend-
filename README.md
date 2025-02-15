@@ -30,7 +30,7 @@ source venv/bin/activate
 
 ### **3️⃣ Install Dependencies**
 ```bash
-pip install -r requirements.txt
+pip install -r requirements/requirements.txt
 ```
 
 ---
