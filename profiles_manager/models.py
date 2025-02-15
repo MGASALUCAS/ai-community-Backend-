@@ -10,8 +10,8 @@ from django.db import models
 
 class CustomUser(AbstractUser):
     GENDER_CHOICES = [
-        ('M', 'Male'),
-        ('F', 'Female'),
+        ('1', 'Male'),
+        ('2', 'Female'),
     ]
     ROLE_CHOICES = [
         ('system_admin', 'System Admin'),
