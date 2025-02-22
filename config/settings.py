@@ -57,6 +57,8 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     'rest_framework.authtoken',
     "allauth.socialaccount",
+    'corsheaders',
+
 
 ]
 
@@ -72,6 +74,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+
 ]
 
 ROOT_URLCONF = "config.urls"

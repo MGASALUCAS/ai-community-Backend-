@@ -22,10 +22,26 @@ class SigninView(generics.GenericAPIView):
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data
         refresh = RefreshToken.for_user(user)
-        return Response({
-            'refresh': str(refresh),
-            'access': str(refresh.access_token),
-        }, status=status.HTTP_200_OK)
+        
+        response_data = {
+            'id': str(user.id),
+            'fullName': user.username,
+            'emailAddress': user.email,
+            'avatar': user.profile.avatar if hasattr(user, 'profile') else None,
+            'sex': user.gender if hasattr(user, 'profile') else None,
+            'token': str(refresh.access_token),
+            'role': [
+                {
+                    'name': user.role,
+                    'permissions': [
+                        'view-dashboard',
+                        'create-user',
+                    ],
+                },
+            ],
+        }
+        
+        return Response(response_data, status=status.HTTP_200_OK)
 
 class UpdateProfileView(generics.UpdateAPIView):
     serializer_class = UpdateProfileSerializer
