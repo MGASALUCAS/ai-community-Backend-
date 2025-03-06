@@ -26,7 +26,8 @@ urlpatterns = [
     path('api/profile/', include('profiles_manager.urls')),
     path('', include('resources.urls')),
     path('', include('events.urls')),  # Add this line
-    # path('', include('challenges.urls')),  # Add this line
+    path('', include('challenges.urls')),  # Add this line
+    path('', include('posts.urls')),  # Add this line
 
 ]
 
