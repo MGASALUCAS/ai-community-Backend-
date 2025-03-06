@@ -25,6 +25,9 @@ urlpatterns = [
     path('api/', include('apis.urls', namespace='apis')),
     path('api/profile/', include('profiles_manager.urls')),
     path('', include('resources.urls')),
+    path('', include('events.urls')),  # Add this line
+    # path('', include('challenges.urls')),  # Add this line
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
