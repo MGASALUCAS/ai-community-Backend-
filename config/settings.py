@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "challenges",
     "posts",
     "forum",
-    "events",  # Add this line
+    "events", 
+    "discussion",
 
 
 

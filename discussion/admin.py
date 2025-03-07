@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Discussion, DiscussionComment, DiscussionLike
 
-# Register your models here.
+admin.site.register(Discussion)
+admin.site.register(DiscussionComment)
+admin.site.register(DiscussionLike)

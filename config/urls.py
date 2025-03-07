@@ -25,9 +25,10 @@ urlpatterns = [
     path('api/', include('apis.urls', namespace='apis')),
     path('api/profile/', include('profiles_manager.urls')),
     path('', include('resources.urls')),
-    path('', include('events.urls')),  # Add this line
-    path('', include('challenges.urls')),  # Add this line
-    path('', include('posts.urls')),  # Add this line
+    path('', include('events.urls')), 
+    path('', include('challenges.urls')),
+    path('', include('posts.urls')),  
+    path('', include('discussion.urls')),
 
 ]
 
