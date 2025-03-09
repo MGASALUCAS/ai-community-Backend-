@@ -23,7 +23,8 @@ class SigninView(generics.GenericAPIView):
         user = serializer.validated_data
         refresh = RefreshToken.for_user(user)
         
-        response_data = {
+        response_data = { "data" : 
+        {
             'id': str(user.id),
             'fullName': user.username,
             'emailAddress': user.email,
@@ -39,9 +40,9 @@ class SigninView(generics.GenericAPIView):
                     ],
                 },
             ],
-        }
+        } }
         
-        return Response(response_data, status=status.HTTP_200_OK)
+        return Response(data=response_data, status=status.HTTP_200_OK)
 
 class UpdateProfileView(generics.UpdateAPIView):
     serializer_class = UpdateProfileSerializer
