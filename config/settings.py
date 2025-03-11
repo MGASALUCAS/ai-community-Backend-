@@ -37,8 +37,8 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost,ai-community-backend-29pmq.ondigitalocean.app").split(",")
-
+# ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost,ai-community-backend-29pmq.ondigitalocean.app").split(",")
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
