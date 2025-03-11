@@ -21,14 +21,14 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("", admin.site.urls),
     path('api/', include('apis.urls', namespace='apis')),
     path('api/profile/', include('profiles_manager.urls')),
-    path('', include('resources.urls')),
-    path('', include('events.urls')), 
-    path('', include('challenges.urls')),
-    path('', include('posts.urls')),  
-    path('', include('discussion.urls')),
+    path('api/', include('resources.urls')),
+    path('api/', include('events.urls')), 
+    path('api/', include('challenges.urls')),
+    path('api/', include('posts.urls')),  
+    path('api/', include('discussion.urls')),
 
 ]
 
